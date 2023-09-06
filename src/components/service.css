@@ -1,35 +1,36 @@
-/* Services.css */
-
+/* service.css */
 .services {
-    text-align: center;
-    padding: 20px;
-  }
-  
-  .services h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .services-list {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .service {
-    flex: 1;
-    border: 1px solid #ccc;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  }
-  
-  .service h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  .service p {
-    font-size: 14px;
-  }
-  
+  text-align: center;
+  padding: 50px;
+  background-color: #f2f2f2;
+}
+
+.services h2 {
+  font-size: 36px;
+  color: #333;
+}
+
+.services-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.service {
+  width: 30%;
+  padding: 20px;
+  margin: 10px;
+  background-color: #ffffff75;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service h3 {
+  font-size: 24px;
+  color: #333;
+}
+
+.service p {
+  font-size: 16px;
+  color: #bd1c1c;
+}
