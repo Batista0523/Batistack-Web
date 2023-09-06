@@ -1,15 +1,15 @@
-import { useState } from "react";
 import "./App.css";
 
 import Services from "./components/Services";
 import Porfolio from "./components/Portfolio";
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
     <>
-      <h1>Batistack Development</h1>
+      <NavBar />
       <Services />
-      <Porfolio/>
+      <Porfolio />
     </>
   );
 }
