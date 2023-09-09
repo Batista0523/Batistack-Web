@@ -6,6 +6,7 @@ const Services = () => {
     {
       title: "Batistasck Development",
       description: "We create custom websites tailored to our clients needs.",
+      
     },
     {
       title: "Interface Desing",

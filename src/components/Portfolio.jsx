@@ -8,12 +8,14 @@ const Portfolio = () => {
       description:
         "This app allows you to search videos using the Youtube API.",
       projectLink: "https://main--velvety-sundae-768c66.netlify.app/",
+      creator: "Elisaul Batista, Erick Tolentino"
     },
     {
       title: "Student Dashboard",
       description:
         "This app allows you to display a list of students with essential information and features.",
       projectLink: "https://fastidious-pasca-edcf37.netlify.app",
+      creator: "Elisaul Batista"
     },
   ];
   return (
@@ -30,6 +32,7 @@ const Portfolio = () => {
               {project.title}
             </a>
             <p>{project.description}</p>
+            <p>Creators: {project.creator}</p>
           </div>
         ))}
       </div>
