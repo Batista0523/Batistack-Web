@@ -1,0 +1,23 @@
+.title_app {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #333; 
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  .nav-links a:hover {
+    background-color: #f0f0f0; 
+    color: #000; 
+  }
+  
