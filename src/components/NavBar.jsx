@@ -6,7 +6,7 @@ import "./navbar.css"
 const NavBar = () => {
   return (
     <div className='together'>
-      <h1 className="title_app">Batistack Development</h1>
+      <h1 className="title_app">Batistack Development Corp.</h1>
       <nav className="nav-links">
         <Link to="/">Home</Link>
         <Link to="/services">Services</Link>
