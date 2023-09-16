@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./about.css";
 
 const About = () => {
@@ -24,6 +23,40 @@ const About = () => {
         Explore our services and let's embark on a collaborative adventure in
         the dynamic world of frontend development.
       </p>
+      <div className="ceo-info">
+        <h3>CEO: Elisaul Batista</h3>
+        <a
+          href="https://github.com/Batista0523"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
+        <p>
+         {" "}
+          <a href="mailto:elisaulbatista@pursuit.org">
+            Email
+          </a>
+        </p>
+        <a
+          href="https://www.linkedin.com/in/elisaul-batista/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+        <p>
+      <a href="https://instagram.com/bati.stack?igshid=MzMyNGUyNmU2YQ==" target="_blank" rel="noopener noreferrer">
+          <i className="fab fa-instagram"></i> Instagram
+        </a>
+      </p>
+        <p>
+   {" "}
+    <a href="tel:+19295572527">
+     Phone
+    </a>
+  </p>
+      </div>
     </div>
   );
 };
