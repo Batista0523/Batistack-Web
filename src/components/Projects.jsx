@@ -1,14 +1,15 @@
 import React from "react";
-import "./portfolio.css";
+import { Link } from "react-router-dom";
 import servicesData from "../data/servicesData";
+import "./projects.css";
 
 const Projects = () => {
-  
   const projects = servicesData.filter((item) => item.projects);
 
   return (
     <div className="portfolio">
-      <h2>Our Projects</h2>
+      <h2 className="home-link">Our Projects</h2>
+      <Link to="/">Go back to Home</Link>
       <div className="project-list">
         {projects.map((project, index) => (
           <div className="project" key={index}>
