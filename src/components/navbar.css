@@ -2,8 +2,14 @@
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
+    text-align: center;
+    margin: 10px;
+  
   }
   
+  .together {
+    background-color: bisque;
+  }
   .nav-links {
     display: flex;
     justify-content: space-around;
@@ -20,4 +26,21 @@
     background-color: #f0f0f0; 
     color: #000; 
   }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .nav-links {
+      justify-content: flex-start;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .nav-links {
+      justify-content: space-around;
+    }
+  }
+
+  
+  
+  
+  
+  
   

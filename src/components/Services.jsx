@@ -10,7 +10,7 @@ const Services = () => {
     <div className="services">
       <h2>Our Services</h2>
       <div className="services-link">
-        <Link to="/">Go back to Home</Link>
+        <Link to="/">Home</Link>
       </div>
       <div className="services-list">
         {aboutServices.map((service, index) => (

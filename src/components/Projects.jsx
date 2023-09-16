@@ -9,7 +9,7 @@ const Projects = () => {
   return (
     <div className="portfolio">
       <h2 className="home-link">Our Projects</h2>
-      <Link to="/">Go back to Home</Link>
+      <Link to="/">Home</Link>
       <div className="project-list">
         {projects.map((project, index) => (
           <div className="project" key={index}>
