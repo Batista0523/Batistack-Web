@@ -32,12 +32,6 @@ const About = () => {
         >
           GitHub
         </a>
-        <p>
-         {" "}
-          <a href="mailto:elisaulbatista@pursuit.org">
-            Email
-          </a>
-        </p>
         <a
           href="https://www.linkedin.com/in/elisaul-batista/"
           target="_blank"
@@ -45,6 +39,12 @@ const About = () => {
         >
           LinkedIn
         </a>
+        <p>
+         {" "}
+          <a href="mailto:elisaulbatista@pursuit.org">
+            Email
+          </a>
+        </p>
         <p>
       <a href="https://instagram.com/bati.stack?igshid=MzMyNGUyNmU2YQ==" target="_blank" rel="noopener noreferrer">
           <i className="fab fa-instagram"></i> Instagram

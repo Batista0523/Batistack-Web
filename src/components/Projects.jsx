@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
 import servicesData from "../data/servicesData";
 import "./projects.css";
 
@@ -9,7 +9,7 @@ const Projects = () => {
   return (
     <div className="portfolio">
       <h2 className="home-link">Our Projects</h2>
-      <Link to="/">Home</Link>
+     
       <div className="project-list">
         {projects.map((project, index) => (
           <div className="project" key={index}>

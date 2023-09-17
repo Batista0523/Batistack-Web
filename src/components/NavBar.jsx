@@ -1,12 +1,12 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import "./navbar.css"
-
+import React from "react";
+import { Link } from "react-router-dom";
+import "./navbar.css";
+import img1 from "../img/logo.jpg";
 
 const NavBar = () => {
   return (
-    <div className='together'>
-      <h1 className="title_app">Batistack Development Corp.</h1>
+    <div className="together">
+      <img className="img1" src={img1} alt="" />
       <nav className="nav-links">
         <Link to="/">Home</Link>
         <Link to="/services">Services</Link>
