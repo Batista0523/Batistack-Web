@@ -1,111 +1,53 @@
-import React, { useState } from "react";
-import './contact.css'
+import React, { useRef } from 'react';
+import "./contact.css";
+import emailjs from 'emailjs-com';
 
 const Contacts = () => {
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
-  const [email, setEmail] = useState("");
-  const [request, setRequest] = useState("");
-  const [touchedFields, setTouchedFields] = useState({
-    firstName: false,
-    lastName: false,
-    email: false,
-    request: false,
-  });
+    const form = useRef();
 
-  const isEmailValid = (email) => {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
-  };
+    const sendEmail = (e) => {
+      e.preventDefault();
 
-  const handleReset = () => {
-    if (!isEmailValid(email)) {
-      alert("Please enter a valid email address.");
-      return;
-    }
+      const name = e.target.user_name.value;
+      const email = e.target.user_email.value;
+      const message = e.target.message.value;
 
-    if (!firstName || !lastName || !email || !request) {
-      setTouchedFields({
-        firstName: !firstName,
-        lastName: !lastName,
-        email: !email,
-        request: !request,
-      });
-      return;
-    }
+      if (!name.trim()) {
+        alert("Please enter your name.");
+        return;
+      }
 
-    setFirstName("");
-    setLastName("");
-    setEmail("");
-    setRequest("");
-    setTouchedFields({
-      firstName: false,
-      lastName: false,
-      email: false,
-      request: false,
-    });
+      if (!email.match(/^\S+@\S+\.\S+$/)) {
+        alert("Please enter a valid email.");
+        return;
+      }
 
-    alert("🚀Thank you , ✨Your request has been sent");
-  };
+      if (!message.trim()) {
+        alert("Please enter your message.");
+        return;
+      }
+
+      emailjs.sendForm('service_o8bul2h', 'template_qhm164i', form.current, 'nv5BCejYsrxTMltQm')
+        .then((result) => {
+          console.log(result.text);
+          alert("✨🌟Your Request was successfully sent, 🚀✅!  Thank You");
+        }, (error) => {
+          console.log(error.text);
+          alert("❌❌Oops! Something went wrong. Please try again later.");
+        });
+    };
 
   return (
     <div className="contact-form">
-      <div>
-        <h1>Batistack Development</h1>
-      </div>
-      <div className="contact">
-        <p>First Name:</p>
-        <input
-          type="text"
-          placeholder="Enter First Name"
-          value={firstName}
-          onChange={(e) => setFirstName(e.target.value)}
-          className={touchedFields.firstName && !firstName ? "error" : ""}
-        />
-        {touchedFields.firstName && !firstName && (
-          <div className="error-message">You must enter First Name</div>
-        )}
-        <p>Last Name:</p>
-        <input
-          type="text"
-          placeholder="Enter Last Name"
-          value={lastName}
-          onChange={(e) => setLastName(e.target.value)}
-          className={touchedFields.lastName && !lastName ? "error" : ""}
-        />
-        {touchedFields.lastName && !lastName && (
-          <div className="error-message">You must enter Last Name</div>
-        )}
-        <p>Email:</p>
-        <input
-          type="email"
-          placeholder="Enter Valid Email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          className={
-            touchedFields.email && !isEmailValid(email) ? "error" : ""
-          }
-        />
-        {touchedFields.email && !isEmailValid(email) && (
-          <div className="error-message">Enter a valid Email</div>
-        )}
-        <div className="text-area">
-          <textarea
-            placeholder="Enter your request here"
-            cols="30"
-            rows="10"
-            value={request}
-            onChange={(e) => setRequest(e.target.value)}
-            className={touchedFields.request && !request ? "error" : ""}
-          ></textarea>
-          {touchedFields.request && !request && (
-            <div className="error-message">You must enter a Request</div>
-          )}
-        </div>
-        <button className="btn" onClick={handleReset}>
-          Submit
-        </button>
-      </div>
+       <form ref={form} onSubmit={sendEmail}>
+      <label>Name</label>
+      <input type="text" name="user_name" />
+      <label>Email</label>
+      <input type="email" name="user_email" />
+      <label>Message</label>
+      <textarea name="message" />
+      <input type="submit" value="Send" />
+    </form>
     </div>
   );
 };
