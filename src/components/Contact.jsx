@@ -51,7 +51,7 @@ const Contacts = () => {
   return (
     <div className="contact-form">
       <div>
-        <h1>Batistasck Development</h1>
+        <h1>Batistack Development</h1>
       </div>
       <div className="contact">
         <p>First Name:</p>
