@@ -14,35 +14,6 @@ const Home = () => {
         </div>
       </div>
       <div className="row">
-        <div className="col-lg-4">
-          <div className="features">
-            <div className="features-content">
-              <h2>Our Features</h2>
-              <ul>
-                <li>Custom Web Development</li>
-                <li>User Experience Design</li>
-                <li>Responsive and Mobile-First Design</li>
-                <li>Single Page Applications (SPAs)</li>
-                <li>Progressive Web Apps (PWAs)</li>
-                <li>Frontend Frameworks (React, Angular, Vue.js)</li>
-                <li>Performance Optimization</li>
-                <li>Cross-Browser Compatibility</li>
-                <li>Web Accessibility (WCAG Compliance)</li>
-                <li>SEO-Friendly Development</li>
-                <li>RESTful API Integration</li>
-                <li>GraphQL Integration</li>
-                <li>State Management (Redux, Mobx)</li>
-                <li>Responsive Email Templates</li>
-                <li>UI/UX Prototyping</li>
-                <li>Interactive Data Visualization</li>
-                <li>Web Security and Authentication</li>
-                <li>Version Control (Git)</li>
-                <li>Frontend Build Tools (Webpack, Babel)</li>
-                <li>Continuous Integration (CI/CD)</li>
-              </ul>
-            </div>
-          </div>
-        </div>
         <div className="col-lg-8">
           <div className="home">
             <div className="card">
@@ -81,6 +52,35 @@ const Home = () => {
                   something amazing together.
                 </p>
               </div>
+            </div>
+          </div>
+        </div>
+        <div className="col-lg-4">
+          <div className="features">
+            <div className="features-content">
+              <h2>Our Features</h2>
+              <ul>
+                <li>Custom Web Development</li>
+                <li>User Experience Design</li>
+                <li>Responsive and Mobile-First Design</li>
+                <li>Single Page Applications (SPAs)</li>
+                <li>Progressive Web Apps (PWAs)</li>
+                <li>Frontend Frameworks (React, Angular, Vue.js)</li>
+                <li>Performance Optimization</li>
+                <li>Cross-Browser Compatibility</li>
+                <li>Web Accessibility (WCAG Compliance)</li>
+                <li>SEO-Friendly Development</li>
+                <li>RESTful API Integration</li>
+                <li>GraphQL Integration</li>
+                <li>State Management (Redux, Mobx)</li>
+                <li>Responsive Email Templates</li>
+                <li>UI/UX Prototyping</li>
+                <li>Interactive Data Visualization</li>
+                <li>Web Security and Authentication</li>
+                <li>Version Control (Git)</li>
+                <li>Frontend Build Tools (Webpack, Babel)</li>
+                <li>Continuous Integration (CI/CD)</li>
+              </ul>
             </div>
           </div>
         </div>
