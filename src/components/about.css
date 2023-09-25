@@ -1,4 +1,4 @@
-/* Common styles for all devices */
+
 .about {
     text-align: center;
     padding: 20px;
@@ -68,7 +68,18 @@
   .ceo-info a:hover {
     color: #2980b9; 
   }
+  .value-list {
+    list-style-type: none;
+    padding: 0;
+  }
   
+  .value-list li::before {
+    content: "•"; /* Bullet character */
+    color: #008cba; /* Bullet color */
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
 
   @media (min-width: 768px) {
     .nav-links {
