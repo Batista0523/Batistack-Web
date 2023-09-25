@@ -1,25 +1,24 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import './navBar.css'; 
 
 const NavBar = () => {
+  const [isNavOpen, setIsNavOpen] = useState(false);
+
+  const toggleNav = () => {
+    setIsNavOpen(!isNavOpen);
+  };
+
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <Link className="navbar-brand" to="/">
-        Batistack Development
-      </Link>
-      <button
-        className="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span className="navbar-toggler-icon"></span>
+    <nav className="navbar">
+      <div className="navbar-brand">
+        <Link to="/">Batistack Development</Link>
+      </div>
+      <button className="navbar-toggle" onClick={toggleNav}>
+        <div className={`icon ${isNavOpen ? 'open' : ''}`}></div>
       </button>
-      <div className="collapse navbar-collapse" id="navbarNav">
-        <ul className="navbar-nav ml-auto">
+      <div className={`navbar-menu ${isNavOpen ? 'open' : ''}`}>
+        <ul className="navbar-nav">
           <li className="nav-item">
             <Link className="nav-link" to="/">
               Home
