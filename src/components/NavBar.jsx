@@ -1,19 +1,53 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./navbar.css";
-import img1 from "../img/logo.jpg";
 
 const NavBar = () => {
   return (
-    <div className="together">
-      <img className="img1" src={img1} alt="" />
-      <nav className="nav-links">
-        <Link to="/">Home</Link>
-        <Link to="/services">Services</Link>
-        <Link to="/projects">Projects</Link>
-        <Link to="/about">About</Link>
-      </nav>
-    </div>
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <Link className="navbar-brand" to="/">
+        Batistack Development
+      </Link>
+      <button
+        className="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span className="navbar-toggler-icon"></span>
+      </button>
+      <div className="collapse navbar-collapse" id="navbarNav">
+        <ul className="navbar-nav ml-auto">
+          <li className="nav-item">
+            <Link className="nav-link" to="/">
+              Home
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link" to="/services">
+              Services
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link" to="/projects">
+              Projects
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link" to="/about">
+              About
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link" to="/contact-form">
+              Contact Us
+            </Link>
+          </li>
+        </ul>
+      </div>
+    </nav>
   );
 };
 
