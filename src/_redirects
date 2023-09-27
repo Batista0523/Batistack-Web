@@ -1,2 +1,8 @@
-# Redirect from batistack.com to www.batistack.com
-/ https://www.batistack.com/:splat 301
+# Redirect from batistasck.com to batistack.com
+/batistasck/* https://batistack.com/:splat 301
+
+# Redirect from www.batistasck.com to batistack.com
+/www.batistasck/* https://batistack.com/:splat 301
+
+# Redirect from the root domain batistasck.com to batistack.com
+/* https://batistack.com/:splat 301
