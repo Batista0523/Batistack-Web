@@ -29,7 +29,8 @@ body {
     border-radius: 10px;
     background-color: #ffffff;
     overflow-y: auto;
-    max-height: 200px; /* Set a maximum height for scrolling */
+    max-height: 490px; 
+   
 }
 
 .features h2 {
