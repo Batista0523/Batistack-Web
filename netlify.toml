@@ -22,3 +22,5 @@ from = "https://batistack.com"
 to = "https://www.batistack.com"
 status = 301
 force = true
+
+
