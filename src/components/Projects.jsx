@@ -10,7 +10,7 @@ const Projects = () => {
       <h2 className="text-center mb-4"> Projects</h2>
       <div className="row">
         <div className="coming-soon">
-          <h2>Our Exceptional Projects Comming Soon..</h2>
+          <h2>Our Exceptional Projects Coming Soon..</h2>
           <p>
             Discover some of the exciting projects we've meticulously crafted to
             perfection for our esteemed clients. Your vision could be the next
