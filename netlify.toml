@@ -1,26 +1,22 @@
 [[redirects]]
-from = "/*"
-to = "/index.html"
-status = 200
-
-
+  from = "/*"
+  to = "/index.html"
+  status = 200
 
 [[redirects]]
-from = "https://batistack.com/*"
-to = "https://www.batistack.com/:splat"
-status = 301
-force = true
+  from = "https://batistack.com/*"
+  to = "https://www.batistack.com/:splat"
+  status = 301
+  force = true
 
 [[redirects]]
-from = "https://www.batistack.com/*"
-to = "https://batistack.com/:splat"
-status = 301
-force = true
+  from = "https://www.batistack.com/*"
+  to = "https://batistack.com/:splat"
+  status = 301
+  force = true
 
 [[redirects]]
-from = "https://batistack.com"
-to = "https://www.batistack.com"
-status = 301
-force = true
-
-
+  from = "https://batistack.com"
+  to = "https://www.batistack.com"
+  status = 301
+  force = true
