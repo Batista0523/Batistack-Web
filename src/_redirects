@@ -1,0 +1,2 @@
+# Redirect from batistack.com to www.batistack.com
+/ https://www.batistack.com/:splat 301
