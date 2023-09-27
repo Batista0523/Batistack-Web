@@ -9,6 +9,14 @@ const Projects = () => {
     <div className="container mt-5">
       <h2 className="text-center mb-4"> Projects</h2>
       <div className="row">
+        <div className="coming-soon">
+          <h2>Our Exceptional Projects Coming Soon..</h2>
+          <p>
+            Discover some of the exciting projects we've meticulously crafted to
+            perfection for our esteemed clients. Your vision could be the next
+            success story we tell. here are two sample while you wait and see the amazing projects we have created for our clients
+          </p>
+        </div>
         {projects.map((project, index) => (
           <div key={index} className="col-lg-4 mb-4">
             <div className="card">
