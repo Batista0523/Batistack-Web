@@ -19,6 +19,7 @@ const About = () => {
         stunning web applications.
       </p>
       <p>
+        
         At Batistack, we pride ourselves on building long-term relationships
         based on trust and reliability. Our commitment is to provide you with
         cutting-edge solutions that drive your success and leave a lasting
