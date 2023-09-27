@@ -38,6 +38,7 @@ const Contacts = () => {
         (result) => {
           console.log(result.text);
           alert("✨🌟Your Request was successfully sent, 🚀✅!  Thank You");
+          form.current.reset();
         },
         (error) => {
           console.log(error.text);
