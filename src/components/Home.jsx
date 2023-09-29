@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./home.css";
 
+
 const Home = () => {
   return (
     <div className="container">
@@ -9,6 +10,7 @@ const Home = () => {
         <div className="col-lg-12 text-center mt-5 p-1">
           <h3 className="display-4">Batistack Development</h3>
           <p className="lead">
+           
             Crafting Digital Dreams, Amplifying Your Vision
           </p>
         </div>
@@ -247,6 +249,9 @@ const Home = () => {
               <Link to="contact-form">
                 <button className="btn btn-cta">Get Started</button>
               </Link>
+            </div>
+            <div>
+           
             </div>
           </div>
         </div>

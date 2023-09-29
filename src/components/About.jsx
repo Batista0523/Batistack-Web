@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./about.css";
+import EmailIcon from '@mui/icons-material/Email';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 const About = () => {
   return (
@@ -39,7 +41,7 @@ const About = () => {
             href="https://github.com/Batista0523"
             target="_blank"
             rel="noopener noreferrer"
-          >
+          ><GitHubIcon/> 
             GitHub
           </a>{" "}
           and{" "}
@@ -52,8 +54,8 @@ const About = () => {
           </a>
         </p>
         <p>
-          Or Reach out via <a href="mailto:elisaulbatista@pursuit.org">Email</a>
-        </p>
+      Or Reach out via <a href="mailto:elisaulbatista@pursuit.org"><EmailIcon fontSize="small" />Email</a>
+    </p>
       </div>
       <div className="additional-info">
         <div className="additional-info">

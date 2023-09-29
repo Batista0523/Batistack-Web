@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './navBar.css'; 
-
+import InstagramIcon from "@mui/icons-material/Instagram";
 const NavBar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
@@ -51,6 +51,11 @@ const NavBar = () => {
             </Link>
           </li>
         </ul>
+      <div>
+      <a href="https://www.instagram.com/bati.stack/" className="instagram-icon">Instagram
+              <InstagramIcon fontSize="large" />{" "}
+            </a>
+      </div>
       </div>
     </nav>
   );
