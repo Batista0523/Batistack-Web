@@ -89,6 +89,14 @@ const servicesData = [
       creator: "Elisaul Batista"
     },
   },
+  {
+    projects: {
+      title: "iShop",
+      description: "this is a simple e-comercial shop website.",
+      projectLink: "https://zippy-choux-b9332b.netlify.app",
+      creator: "Elisaul Batista"
+    },
+  },
 ];
 
 export default servicesData;
