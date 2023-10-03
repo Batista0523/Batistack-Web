@@ -89,7 +89,7 @@ const servicesData = [
       creator: "Elisaul Batista"
     },
   },
-    {
+  {
     projects: {
       title: "iShop",
       description: "this is a simple e-comercial shop website.",
