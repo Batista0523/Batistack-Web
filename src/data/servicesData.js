@@ -99,8 +99,8 @@ const servicesData = [
   },
   {
     projects: {
-      title: "beats",
-      description: "Look t=at this beutiful desing HTML,CSS.",
+      title: "Beats",
+      description: "Look at this beautiful desing HTML,CSS.",
       projectLink: "https://main--funny-sfogliatella-3c5b54.netlify.app/",
       creator: "Elisaul Batista"
     },
