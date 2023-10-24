@@ -16,6 +16,7 @@ const Projects = () => {
             perfection for our esteemed clients. Your vision could be the next
             success story we tell. here are two sample while you wait and see the amazing projects we have created for our clients
           </p>
+          
         </div>
         {projects.map((project, index) => (
           <div key={index} className="col-lg-4 mb-4">

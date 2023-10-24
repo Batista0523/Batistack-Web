@@ -97,6 +97,14 @@ const servicesData = [
       creator: "Elisaul Batista"
     },
   },
+  {
+    projects: {
+      title: "Beats",
+      description: "Look at this beautiful desing HTML,CSS.",
+      projectLink: "https://main--funny-sfogliatella-3c5b54.netlify.app/",
+      creator: "Elisaul Batista"
+    },
+  },
 ];
 
 export default servicesData;
